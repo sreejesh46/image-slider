@@ -1,20 +1,33 @@
 <!DOCTYPE html>
+<!--
+    Image Slider Project
+    Author: Your Name
+    Description: Responsive image slider with navigation and slideshow functionality.
+-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Slider</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="slider-container">
-        <div class="slider">
-            <img id="slide" src="" alt="Image Slider">
-        </div>
-        <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
-        <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
-        <button class="nav-button toggle" onclick="toggleSlideshow()">⏸</button>
+    <!-- Link to external CSS for slider styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <!-- Slider container holds the image and navigation buttons -->
+  <div class="slider-container">
+    <div class="slide-counter" id="slideCounter"></div>
+    <div class="slider">
+      <!-- Main image displayed in the slider -->
+      <img id="slide" src="" alt="Image Slider">
+      <!-- Previous button: shows previous image -->
+      <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+      <!-- Next button: shows next image -->
+      <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+      <!-- Play/Pause button: toggles automatic slideshow -->
+      <button class="nav-button toggle" onclick="toggleSlideshow()">⏸</button>
     </div>
+  </div>
+    <!-- Link to external JavaScript for slider functionality -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
