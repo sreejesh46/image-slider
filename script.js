@@ -80,3 +80,14 @@ startSlideshow();
 // Attach user-triggered navigation to buttons
 document.querySelector('.next').onclick = () => nextSlide(true);
 document.querySelector('.prev').onclick = () => prevSlide(true);
+
+// Keyboard controls: left/right arrows for navigation, spacebar for play/pause
+document.addEventListener('keydown', function(e) {
+  if (e.code === 'ArrowRight') {
+    nextSlide(true);
+  } else if (e.code === 'ArrowLeft') {
+    prevSlide(true);
+  } else if (e.code === 'Space') {
+    toggleSlideshow();
+  }
+});

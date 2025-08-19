@@ -7,10 +7,14 @@ This project is a responsive image slider (carousel) built with HTML, CSS, and J
 - Display 5 images in a slider
 - Next and Previous navigation buttons
 - Automatic slideshow (changes image every 3 seconds)
-- Play/Pause button to control slideshow
-- Smooth fade transition between images
-- Responsive design (fits any screen size)
-- Pauses slideshow when user navigates manually
+ - Play/Pause button to control slideshow
+ - Keyboard controls:
+	 - Right Arrow: Next slide
+	 - Left Arrow: Previous slide
+	 - Spacebar: Play/Pause slideshow
+ - Smooth fade transition between images
+ - Responsive design (fits any screen size)
+ - Pauses slideshow when user navigates manually
 
 ## How to Run
 1. Download or clone the project files.
